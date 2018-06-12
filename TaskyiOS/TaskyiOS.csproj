@@ -39,7 +39,7 @@
     <ConsolePause>False</ConsolePause>
     <MtouchLink>None</MtouchLink>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
-    <CodesignKey>iPhone Distribution: Neudesic Technologies Private Limited (JFRZT5NXYA)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <CodesignProvision></CodesignProvision>
     <CodesignEntitlements></CodesignEntitlements>
   </PropertyGroup>
