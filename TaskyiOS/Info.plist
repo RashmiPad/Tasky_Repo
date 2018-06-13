@@ -46,6 +46,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CFBundleIdentifier</key>
-	<string>com.xamarin.*</string>
+	<string>com.xamarin.taskyBitrise</string>
 </dict>
 </plist>
