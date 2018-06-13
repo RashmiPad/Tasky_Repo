@@ -71,7 +71,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
-    <CodesignProvision>com.xamarin.*</CodesignProvision>
+    <CodesignProvision>com.xamarin.taskyBitrise</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
