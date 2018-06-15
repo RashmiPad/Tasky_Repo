@@ -49,10 +49,10 @@
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;armeabi</AndroidSupportedAbis>
     <AndroidKeyStore>True</AndroidKeyStore>
-    <AndroidSigningKeyStore>TaskyApk</AndroidSigningKeyStore>
+    <AndroidSigningKeyStore>Tasky</AndroidSigningKeyStore>
     <AndroidSigningStorePass>Tasky@123</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>Tasky</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass>Tasky@123</AndroidSigningKeyPass>
+    <AndroidSigningKeyAlias>TaskyAlias</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>Tasky@1234</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
