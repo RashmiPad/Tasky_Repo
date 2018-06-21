@@ -48,11 +48,11 @@
     <ConsolePause>False</ConsolePause>
     <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
     <AndroidSupportedAbis>armeabi-v7a;arm64-v8a;armeabi</AndroidSupportedAbis>
-    <AndroidKeyStore>True</AndroidKeyStore>
-    <AndroidSigningKeyStore>Tasky</AndroidSigningKeyStore>
+    <AndroidKeyStore></AndroidKeyStore>
+    <AndroidSigningKeyStore>TaskyApk</AndroidSigningKeyStore>
     <AndroidSigningStorePass>Tasky@123</AndroidSigningStorePass>
-    <AndroidSigningKeyAlias>TaskyAlias</AndroidSigningKeyAlias>
-    <AndroidSigningKeyPass>Tasky@1234</AndroidSigningKeyPass>
+    <AndroidSigningKeyAlias>Tasky</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>Tasky@123</AndroidSigningKeyPass>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -61,6 +61,12 @@
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Data.Sqlite" />
     <Reference Include="System.Data" />
+    <Reference Include="HockeySDK.AndroidBindings">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\MonoAndroid403\HockeySDK.AndroidBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="HockeySDK">
+      <HintPath>..\packages\HockeySDK.Xamarin.5.1.2\lib\MonoAndroid403\HockeySDK.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,6 +79,7 @@
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="Properties\AndroidManifest.xml" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -88,9 +95,4 @@
   <ItemGroup>
     <Folder Include="Resources\drawable-mdpi\" />
     <Folder Include="Resources\drawable-hdpi\" />
-    <Folder Include="Resources\drawable-ldpi\" />
-    <Folder Include="Resources\drawable-xhdpi\" />
-  </ItemGroup>
-  <Import Project="..\TaskySharedCode\TaskySharedCode.projitems" Label="Shared" Condition="Exists('..\TaskySharedCode\TaskySharedCode.projitems')" />
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
-</Project>
+    <F
