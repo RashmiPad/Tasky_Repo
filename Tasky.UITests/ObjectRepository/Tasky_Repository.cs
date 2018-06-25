@@ -14,7 +14,8 @@ namespace Tasky.UITests
         public static Func<AppQuery, AppQuery> TaskyNotes => (appQuery) => Device.OnPlatform<AppQuery>(iOS: appQuery.Marked("Notes"), Android: appQuery.Id("NotesText"));
         public static Func<AppQuery, AppQuery> TaskyDoneSelect => (appQuery) => Device.OnPlatform<AppQuery>(iOS: appQuery.Marked("Done").Index(1), Android: appQuery.Id("chkDone"));
         public static Func<AppQuery, AppQuery> TaskySave => (appQuery) => Device.OnPlatform<AppQuery>(iOS: appQuery.Marked("Save"), Android: appQuery.Id("SaveButton"));
-
+        public static Func<AppQuery, AppQuery> TaskySave1=> (appQuery) => Device.OnPlatform<AppQuery>(iOS: appQuery.Marked("Save1"), Android: appQuery.Id("SaveButton1"));
+ 
 
     }
 }
