@@ -40,5 +40,25 @@ namespace Tasky.UITests
             app.Tap(Tasky_Repository.TaskySave);
             app.Screenshot("Task Details Screen.");
         }
+        
+        [Test]
+        public void VerifySave()
+        {
+            //app.Repl();
+
+            app.Screenshot("First Screen.");
+            Thread.Sleep(1000);
+            app.Tap(Tasky_Repository.MenuAddTask);
+            app.Screenshot("Task Details Screen.");
+            app.EnterText(Tasky_Repository.TaskyName, "Test");
+            app.EnterText(Tasky_Repository.TaskyNotes, "Test Tasky");
+            app.Tap(Tasky_Repository.TaskyDoneSelect);
+            app.Tap(Tasky_Repository.TaskySave1);
+            app.Screenshot("Task Details Screen.");
+        }
+        
+        
+        
+        
     }
 }
